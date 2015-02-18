@@ -1,0 +1,34 @@
+[root]
+name = "swarm"
+version = "0.0.1"
+dependencies = [
+ "xinerama 0.0.1 (git+https://github.com/Kintaro/rust-xinerama.git)",
+ "xlib 0.1.0 (git+https://github.com/Kintaro/rust-xlib.git?branch=class_hint)",
+]
+
+[[package]]
+name = "bitflags"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "xinerama"
+version = "0.0.1"
+source = "git+https://github.com/Kintaro/rust-xinerama.git#60c722b188488b8cae4fc2e45c53b12fae497d4c"
+dependencies = [
+ "xlib 0.1.0 (git+https://github.com/Kintaro/rust-xlib.git?branch=wtftw)",
+]
+
+[[package]]
+name = "xlib"
+version = "0.1.0"
+source = "git+https://github.com/Kintaro/rust-xlib.git?branch=class_hint#4975fcbba9899c1b26704552382c77c1b22b113c"
+
+[[package]]
+name = "xlib"
+version = "0.1.0"
+source = "git+https://github.com/Kintaro/rust-xlib.git?branch=wtftw#e7337bfdaa0473537e1793d16a2ee0cdad07cf28"
+dependencies = [
+ "bitflags 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
